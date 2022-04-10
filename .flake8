@@ -1,0 +1,9 @@
+[flake8]
+filename = *.py
+accept-encodings = utf-8
+max-complexity = 12
+max-line-length = 99
+max-linenumber = 500
+multiline-quotes = double
+inline-quotes = double
+extend-ignore = E203, W503
