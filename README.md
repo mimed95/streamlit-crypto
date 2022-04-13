@@ -5,7 +5,7 @@ As of now it only fetches BTC, ETH, XRP and DOGE prices to display.
 
 ## To-Do:
 
-- [x] Configuration management for tickers with dynaconf
+ - [X] Configuration management for tickers with dynaconf
 - dynamic display of tickers
     - [ ] adding/removing cryptos
     - [ ] change price to display to Open, Close, Min, Max
