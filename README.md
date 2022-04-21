@@ -1,3 +1,4 @@
+
 # Crypto Ticker Dashboard in Streamlit
 
 A streamlit dashboard for cryptocurrencies. This is a work in progress.
@@ -18,3 +19,6 @@ As of now it only fetches BTC, ETH, XRP and DOGE prices to display.
 ``pip install -r requirements.txt``
 - To display the ticker dashboard run
 ``streamlit run src/app.py`` and open http://localhost:8501/ in your browser
+
+or access the app on share.streamlit.io via
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mimed95/streamlit-crypto/src/app.py)
