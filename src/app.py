@@ -1,3 +1,5 @@
+from datetime import date
+
 import streamlit as st
 import yfinance as yf
 
@@ -25,7 +27,8 @@ histories = {
     name: Data[name].history(period="max") for name in settings.ticker_image_URL.keys()
 }
 # Fetch history data from Yahoo Finance
-start = end = "2021-11-19"
+start = end = date.today().strftime("%Y-%m-%d")
+# make today default date
 downloads = {
     name: yf.download(ticker, start=start, end=end)
     for name, ticker in zip(settings.ticker_image_URL.keys(), settings.ticker_list)
