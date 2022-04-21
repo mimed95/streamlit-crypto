@@ -1,7 +1,8 @@
-cryptos = [ "Bitcoin", "Ethereum", "Ripple", "Doge" ]
-ticker_list = [ "BTC-USD", "ETH-USD", "XRP-USD", "DOGE-USD" ]
+cryptos = [ "Bitcoin", "Ethereum", "Ripple", "Doge", "PancakeSwap" ]
+ticker_list = [ "BTC-USD", "ETH-USD", "XRP-USD", "DOGE-USD", "CAKE-USD" ]
 [ticker_image_URL]
 BTC = "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
 ETH = "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
 XRP = "https://s2.coinmarketcap.com/static/img/coins/64x64/52.png"
 DOGE = "https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+CAKE = "https://s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
