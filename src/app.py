@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 
 import streamlit as st
 import yfinance as yf
@@ -27,7 +27,8 @@ histories = {
     name: Data[name].history(period="max") for name in settings.ticker_image_URL.keys()
 }
 # Fetch history data from Yahoo Finance
-start = end = date.today().strftime("%Y-%m-%d")
+start = end = (date.today() - timedelta(days=1)).strftime("%Y-%m-%d")
+
 # make today default date
 downloads = {
     name: yf.download(ticker, start=start, end=end)
@@ -36,10 +37,5 @@ downloads = {
 
 for name, crypto in zip(settings.cryptos, settings.ticker_image_URL.keys()):
     display_chart(
-        name,
-        histories[crypto],
-        settings.ticker_image_URL[crypto],
-        downloads[crypto],
-        start,
-        end,
+        name, histories[crypto], settings.ticker_image_URL[crypto], downloads[crypto]
     )
